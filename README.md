@@ -1,7 +1,7 @@
 # Jerry's Quick Mart
 
 # Project was done with React. 
-#To run the project follow the next steps:
+To run the project follow the next steps:
 
 ---------------------------------------
 1. Download the project
