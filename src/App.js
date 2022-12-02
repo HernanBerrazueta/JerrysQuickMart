@@ -73,7 +73,6 @@ function App() {
   }, []);
 
   const customerHandler = (e) => {
-    console.log(e.target.value);
     if (e.target.value === "Regular") {
       setCustomer(false);
     } else {
@@ -115,10 +114,7 @@ function App() {
           values();
         }
       } else if (value < cart[index].quantity) {
-        console.log("entro");
         const unit = cart[index].quantity - value;
-        // if (stock.quantity <= unit) {
-        console.log("entro 2");
         const cartRef = [...cart];
         const productsRef = [...products];
         productsRef[productIndex].quantity =
@@ -127,7 +123,6 @@ function App() {
         setCart(cartRef);
         setProducts(productsRef);
         values();
-        // }
       }
     }
   };
@@ -240,7 +235,6 @@ YOU SAVED: $ ${savedMoney.toFixed(2)}
   const subTotalTax = () => {
     let c = 0;
     cart.forEach((element) => {
-      console.log(element);
       if (element.tax) {
         if (customer) {
           c += element.member * element.quantity;
@@ -273,9 +267,6 @@ YOU SAVED: $ ${savedMoney.toFixed(2)}
         d += element.regular * element.quantity;
       }
     });
-
-    console.log("member " + c);
-    console.log("regular " + d);
 
     setSavedMoney(d - c);
   };
