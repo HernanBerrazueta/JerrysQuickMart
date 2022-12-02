@@ -1,6 +1,6 @@
 # Jerry's Quick Mart
 
-# Project was done with React. 
+The Project was done with React. 
 To run the project follow the next steps:
 
 ---------------------------------------
