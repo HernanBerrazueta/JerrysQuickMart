@@ -1,0 +1,47 @@
+body {
+  font-family: "Arial";
+}
+
+.App {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.optionsNav {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.container h3 {
+  width: 100%;
+  text-align: left;
+}
+
+.cart {
+  width: 100%;
+}
+
+.cart table {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.moneyData {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.moneyData b {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.inputContainer label {
+  display: block;
+}
